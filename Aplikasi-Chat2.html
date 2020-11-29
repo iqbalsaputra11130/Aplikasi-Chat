@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Chat</title>
+</head>
+<body>
+    <fieldset>
+        <div class="atas">
+            <div class="kotak" id="kotak"></div>
+            <input type="text" id="isipesan" placeholder="Masukkan Text">
+            <input type="submit" value="kirim" onclick="kirimpesan()">
+        </div>
+    </fieldset>
+</body>
+<script>
+    function kirimpesan(){
+        let isipesan = document.getElementById("isipesan").value;
+        document.getElementById("kotak").innerHTML += isipesan + "<br />"
+        console.log("kotak")
+    }
+</script>
+</html>
